@@ -20,7 +20,7 @@ db.once('open', () => {
 /* Start Middleware */
 app.use(methodOverride('_method'))
 app.use(express.static('public')) // come back to here to pair w public*********
-app.use('/blog', require('./controllers/routeController'))
+app.use('/gym', require('./controllers/routeController'))
 /* END Middleware */
 
 // Tell the app to listen on a port

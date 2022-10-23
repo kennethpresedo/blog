@@ -1,18 +1,18 @@
-const  RESOURCE_PATH = '/blog'
+const  RESOURCE_PATH = '/gym'
 
 
 const viewContrller = {
     index (req, res, next) {
-        res.render('blog/Index', res.locals.data)
+        res.render('gym/Index', res.locals.data)
     },
     newView (req, res, next) {
-        res.render('blog/New')
+        res.render('gym/New')
     },
     edit (req, res, next) { 
-        res.render('blog/Edit', res.locals.data)
+        res.render('gym/Edit', res.locals.data)
     },
     show (req, res, next) {
-        res.render('blog/Show', res.locals.data)
+        res.render('gym/Show', res.locals.data)
     },
     redirectHome (req, res, next) {
         res.redirect(RESOURCE_PATH)

@@ -3,7 +3,11 @@ const Default = require('../layouts/Default.jsx')
 
 class Index extends React.Component {
     render() {
+        return(
+            <Default title="Welcome">
 
+            </Default>
+        )
     }
 }
 
