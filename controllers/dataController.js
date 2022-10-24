@@ -1,3 +1,4 @@
+const { update } = require('../models/gym')
 const Gym = require('../models/gym')
 
 const dataController = {
@@ -9,7 +10,7 @@ const dataController = {
                     msg: err.message
                 })
             } else {
-                res.locals.data.poke = membership
+                res.locals.data.gym = membership
                 next()
             }
         })
@@ -22,7 +23,7 @@ const dataController = {
                     msg: err.message
                 })
             } else {
-                res.locals.data.poke = deleteMembership
+                res.locals.data.gym = deleteMembership
                 next()
             }
         })
@@ -35,7 +36,7 @@ const dataController = {
                     msg: err.message
                 })
             } else {
-                res.locals.data.poke = updateMembership
+                res.locals.data.gym = updateMembership
                 next()
             }
         })
@@ -48,7 +49,7 @@ const dataController = {
                     msg: err.message
                 })
             } else {
-                res.locals.data.poke = selectMembership
+                res.locals.data.gym = selectMembership
                 next()
             }
         })
@@ -60,10 +61,10 @@ const dataController = {
             if (err) {
                 res.status(404).send({
                     msg: err.message,
-                    output: 'Could not find a Pokemon with that ID'
+                    output: 'Could not find a membership with that ID'
                 })
             } else {
-                res.locals.data.poke = foundMembership
+                res.locals.data.gym = foundMembership
                 next()
             }
         })

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Special+Elite&display=swap');
+
+body {
+    background-color: aqua;
+    font-family: 'Arvo', serif;
+    text-align: center;
+    /* background-repeat: no-repeat;
+    background-position: left; */
+    /* background-size: cover; */
+}
+
+h1 {
+    font-family: 'Arvo', serif;
+    background: teal;
+    margin: 0;
+    margin-bottom: .5em;
+    padding: 1em;
+    text-align: center;
+}
+
+a {
+    color: #ff5500;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+    font-size: 1.5em;
+    background: whitesmoke
+}
+
+a:hover {
+    color: gold;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    color: #ff5500;
+}
+
+input[type=text] {
+    padding: .3em;
+}
+
+input[type=submit] {
+    padding: .3em;
+    color: #ff5500;
+    background: whitesmoke;
+    font-size: 1em;
+    border-radius: 10%;
+}

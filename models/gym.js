@@ -2,9 +2,9 @@ const mongoose = require('mongoose')
 
 // Make a Schema
 const gymSchema = new mongoose.Schema({
-  title: { type: String, required: true },
-  entry: { type: String, required: true },
-  likes: { String }
+  membership: { type: String, required: true },
+  price: { type: String, required: true },
+  image: { type: String }
 })
 
 // Make a Model for the Schema
