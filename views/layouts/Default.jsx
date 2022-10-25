@@ -11,10 +11,10 @@ class Default extends React.Component {
                 </head>
                 <body>
                     <nav>
-                        <a href="/gym">Go to Home Page For Packages</a>
-                        <a href="/gym/new">Select New Package</a>
-                        { gym? <a href={`/gym/${gym._id}/edit`}> {gym.membership} Edit Page </a> : ''}
-                        { gym? <a href={`/gym/${gym._id}`}>{gym.membership} Show Page</a> : ''}
+                        <a href="/gym">Go to Home Page For Packages</a><br />
+                        <a href="/gym/new">Select New Package</a><br />
+                        { gym? <a href={`/gym/${gym._id}/edit`}> {gym.membership} Edit Page </a> : ''}<br />
+                        { gym? <a href={`/gym/${gym._id}`}>{gym.membership} Show Page</a> : ''}<br />
                     </nav>
                     <h1>
                         {title}

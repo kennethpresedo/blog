@@ -4,13 +4,13 @@ const Gym = require('../models/gym')
 const dataController = {
     // Index
     index(req, res, next) {
-        Gym.find({}, (err, membership) => {
+        Gym.find({}, (err, package) => {
             if (err) {
                 res.status(400).send({
                     msg: err.message
                 })
             } else {
-                res.locals.data.gym = membership
+                res.locals.data.gym = package
                 next()
             }
         })
