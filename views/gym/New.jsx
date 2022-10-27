@@ -8,7 +8,8 @@ class New extends React.Component {
             <form method="POST" action="/gym">
                 membership: <input type="text" name="membership" placeholder='Name of Package'></input><br/>
                 price: <input type="text" name="price" placeholder='Price of Package'></input><br/>
-                image: <input type="text" name="image" placeholder='Image'></input><br/><br />
+                imageOne: <input type="text" name="imageOne" placeholder='ImageOne'></input><br/>
+                imageTwo: <input type="text" name="imageTwo" placeholder='ImageTwo'></input><br/><br />
                 <input type="submit" value="Continue"></input>
             </form>
             </Default>
