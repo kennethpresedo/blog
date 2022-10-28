@@ -12,7 +12,8 @@ class SignUp extends React.Component {
             <label>USERNAME: <input type='text' name='username' required /> </label>
             <label>PASSWORD: <input type='password' name='password' required />
             </label>
-            <input type='submit' value='Create Account' />
+            <input type='submit' value='Create Account' /><br />
+            <a href='/user/login'>Already a member? Click here to Log In</a>
           </fieldset>
         </form>
       </Default>

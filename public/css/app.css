@@ -51,15 +51,16 @@ a {
 
 input[type=text] {
     padding: .3em;
-    color: #ff5500;
+    color: wheat;
 }
 
 input[type=submit] {
     padding: .3em;
     /* color: #ff5500; */
-    background: whitesmoke;
+    background: wheat;
     font-size: 1em;
     border-radius: 10%;
+    color: black;
 }
 
 img {
@@ -86,4 +87,16 @@ p {
     align-items: center;
     justify-content: center;
     font-size: 2em;
+}
+
+fieldset {
+    color: wheat;
+}
+
+legend {
+    color: wheat;
+}
+
+label {
+    color: wheat;
 }

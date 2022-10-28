@@ -3,6 +3,7 @@ const React = require('react');
 class Default extends React.Component {
     render(){
         const {gym, title} = this.props
+        const {qrCode} = this.props
         return(
             <html>
                 <head>

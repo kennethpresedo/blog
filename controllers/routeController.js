@@ -17,9 +17,9 @@ const viewController = require('./viewController')
 // Routes
 // Index
 router.get('/', dataController.index, viewController.index)
-router.get('/silver', dataController.index, viewController.silverView)
+router.get('/silver', dataController.show, viewController.silverView)
 router.get('/gold', dataController.show, viewController.goldView)
-router.get('/elite', dataController.show, viewController.eliteView)
+router.get('/pump', dataController.show, viewController.pumpView)
 // New
 router.get('/new', viewController.newView)
 // Delete

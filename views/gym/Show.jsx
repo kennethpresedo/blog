@@ -8,7 +8,7 @@ class Show extends React.Component {
         const capitalized = membership[0].toUpperCase() + membership.substring(1)
         return (
             <Default title={`${capitalized} Package`} gym={this.props.gym}>
-
+                <a href='/user/signup'>Select This Package</a>
                 <p>
                     {p1}<br />
                     {p2}<br />
@@ -18,7 +18,7 @@ class Show extends React.Component {
                 </p>
                 <img src={`${imageOne}`}></img>
                 <img src={`${imageTwo}`}></img>
-
+            
             </Default>
         )
     }

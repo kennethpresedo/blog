@@ -78,7 +78,7 @@ const dataController = {
             }
         })
     },
-    createElite(req, res, next) {
+    createPump(req, res, next) {
         Gym.create(req.body, (err, selectMembership) => {
             if (err) {
                 res.status(400).send({

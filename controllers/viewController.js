@@ -20,8 +20,8 @@ const viewContrller = {
     goldView (req, res, next) {
         res.render('packages/Gold', res.locals.data)
     },
-    eliteView (req, res, next) {
-        res.render('packages/Elite', res.locals.data)
+    pumpView (req, res, next) {
+        res.render('packages/Pump', res.locals.data)
     },
     redirectHome (req, res, next) {
         res.redirect(RESOURCE_PATH)
