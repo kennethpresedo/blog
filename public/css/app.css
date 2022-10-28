@@ -7,7 +7,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
-    color: wheat;
+    color: white;
 }
 
 h1 {
@@ -19,6 +19,7 @@ h1 {
     padding: 1em;
     text-align: center;
     font-size: 3em;
+    color: wheat;
 }
 
 a {
