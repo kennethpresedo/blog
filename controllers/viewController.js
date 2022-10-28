@@ -14,6 +14,15 @@ const viewContrller = {
     show (req, res, next) {
         res.render('gym/Show', res.locals.data)
     },
+    silverView (req, res, next) {
+        res.render('packages/Silver', res.locals.data)
+    },
+    goldView (req, res, next) {
+        res.render('packages/Gold', res.locals.data)
+    },
+    eliteView (req, res, next) {
+        res.render('packages/Elite', res.locals.data)
+    },
     redirectHome (req, res, next) {
         res.redirect(RESOURCE_PATH)
     },

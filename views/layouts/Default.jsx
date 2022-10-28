@@ -11,10 +11,12 @@ class Default extends React.Component {
                 </head>
                 <body>
                     <nav>
-                        {/* <a href="/gym">See Packages</a><br /> */}
+                        <a href="/gym">   Memberships   </a>  | 
+                        <a href="/gym">   Log In   </a>  | 
+                        <a href="/gym">   Sign Up   </a>
                         {/* <a href="/gym/new">Select New Package</a><br /> */}
-                        { gym? <a href={`/gym/${gym._id}/edit`}> {gym.membership} Edit Page </a> : ''}
-                        { gym? <a href={`/gym/${gym._id}`}>{gym.membership} Show Page</a> : ''}
+                        {/* { gym ? <a href={`/gym/${gym._id}/edit`}> {gym.membership} Edit Page </a> : ''} */}
+                        {/* { gym ? <a href={`/gym/${gym._id}`}>{gym.membership} Show Page</a> : ''} */}
                     </nav>
                     <h1>
                         {title}

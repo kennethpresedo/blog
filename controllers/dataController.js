@@ -54,6 +54,42 @@ const dataController = {
             }
         })
     },
+    createGold(req, res, next) {
+        Gym.create(req.body, (err, selectMembership) => {
+            if (err) {
+                res.status(400).send({
+                    msg: err.message
+                })
+            } else {
+                res.locals.data.gym = selectMembership
+                next()
+            }
+        })
+    },
+    createSilver(req, res, next) {
+        Gym.create(req.body, (err, selectMembership) => {
+            if (err) {
+                res.status(400).send({
+                    msg: err.message
+                })
+            } else {
+                res.locals.data.gym = selectMembership
+                next()
+            }
+        })
+    },
+    createElite(req, res, next) {
+        Gym.create(req.body, (err, selectMembership) => {
+            if (err) {
+                res.status(400).send({
+                    msg: err.message
+                })
+            } else {
+                res.locals.data.gym = selectMembership
+                next()
+            }
+        })
+    },
     // Edit
     // Show
     show(req, res, next) {
