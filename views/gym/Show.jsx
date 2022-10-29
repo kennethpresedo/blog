@@ -8,7 +8,8 @@ class Show extends React.Component {
         const capitalized = membership[0].toUpperCase() + membership.substring(1)
         return (
             <Default title={`${capitalized} Package`} gym={this.props.gym}>
-                <a href='/user/signup'>Select This Package</a>
+                {/* <a href={`/gym/pump/${this.props.gym._id}`}>Select This Package</a> */}
+                <a href={`/user/signup`}>Select This Package</a>
                 <p>
                     {p1}<br />
                     {p2}<br />

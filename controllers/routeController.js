@@ -6,19 +6,20 @@ const router = express.Router()
 const dataController = require('./dataController')
 const viewController = require('./viewController')
 
-// router.use((req, res, next) => {
-//     if (req.session.loggedIn) {
-//       next()
-//     } else {
-//       res.redirect("/user/login")
-//     }
-//   })
+router.use((req, res, next) => {
+    if (req.session.loggedIn) {
+      next()
+    } else {
+      res.redirect("/user/login")
+    }
+  })
 
 // Routes
 // Index
 router.get('/', dataController.index, viewController.index)
 router.get('/silver', dataController.show, viewController.silverView)
 router.get('/gold', dataController.show, viewController.goldView)
+// router.get('/pump/:id', dataController.show, viewController.pumpView)
 router.get('/pump', dataController.show, viewController.pumpView)
 // New
 router.get('/new', viewController.newView)

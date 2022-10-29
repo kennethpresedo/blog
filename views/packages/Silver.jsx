@@ -4,15 +4,18 @@ const Default = require('../layouts/Default.jsx')
 class Silver extends React.Component {
 
     render() {
-        const { qrCode } = this.props.pump
+        const { pump } = this.props
+        // const { image } = this.props.pump
+    
         return (
-            <Default title={pump}>
+            <Default title="Silver">
 
-                <img src={`${qr}`}></img>
+                {/* <img src={`${image}`}></img> */}
             
             </Default>
         )
     }
+
 }
 
 module.exports = Silver

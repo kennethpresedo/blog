@@ -4,13 +4,15 @@ require('dotenv').config()
 const express = require('express')
 const methodOverride = require('method-override')
 // const cors = require('cors') //here
+const session = require("express-session");
+const MongoStore = require("connect-mongo");
 const db = require('./models/db')
 const app = express()
 
 // Configure the app (app.set)
 /* Start Config */
 app.use(express.urlencoded({ extended: true })) 
-// app.use(express.json()) //here
+app.use(express.json()) //here
 // app.use(cors()) //here
 app.use((req, res, next) => {
   res.locals.data = {}
@@ -25,14 +27,14 @@ db.once('open', () => {
 app.use(methodOverride('_method'))
 app.use(express.static('public')) // come back to here to pair w public*********
 
-// app.use(
-//   session({
-//     secret: process.env.SECRET,
-//     store: MongoStore.create({ mongoUrl: process.env.MONGO_URI }),
-//     saveUninitialized: true,
-//     resave: false,
-//   })
-// )
+app.use(
+  session({
+    secret: process.env.SECRET,
+    store: MongoStore.create({ mongoUrl: process.env.MONGO_URI }),
+    saveUninitialized: true,
+    resave: false,
+  })
+)
 
 
 app.use('/gym', require('./controllers/routeController'))

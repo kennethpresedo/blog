@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:wght@100&display=swap');
 
 body {
-    background: url('https://wallpaperaccess.com/full/1164838.jpg');
+    /* background: url('https://wallpaperaccess.com/full/1164838.jpg'); */
+    background: url('https://www.popsci.com/uploads/2019/11/29/B6P34D4MIFB2ZLIOT4KGN2I5OI-1024x683.jpg');
     font-family: 'Italiana', serif;
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
     color: white;
+    background-size: cover;
 }
 
 h1 {

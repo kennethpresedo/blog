@@ -2,8 +2,7 @@ const React = require('react');
 
 class Default extends React.Component {
     render(){
-        const {gym, title} = this.props
-        const {qrCode} = this.props
+        const {gym, title, pump} = this.props
         return(
             <html>
                 <head>
@@ -14,7 +13,9 @@ class Default extends React.Component {
                     <nav>
                         <a href="/gym">   Memberships   </a>  | 
                         <a href="/user/login">   Log In   </a>  | 
-                        <a href="/user/signup">   Sign Up   </a>
+                           <a href="/user/signup">   Sign Up   </a>   |
+                           <a href="/user/logout">   Logout   </a>   <br />
+
                         {/* <a href="/user/logout"><button>Logout</button></a> */}
                         {/* <a href="/gym/new">Select New Package</a><br /> */}
                         {/* { gym ? <a href={`/gym/${gym._id}/edit`}> {gym.membership} Edit Page </a> : ''} */}

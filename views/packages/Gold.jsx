@@ -5,7 +5,7 @@ class Gold extends React.Component {
     render(){
         return (
             <Default title="New Membership">
-            <form method="POST" action="/gym/silver">
+            <form method="POST" action="/packages/siver">
                 qrCode: <input type="text" name="qrCode" placeholder='code'></input><br/>
                 <input type="submit" value="Continue"></input>
             </form>
